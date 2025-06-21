@@ -1,0 +1,119 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7fa;
+}
+
+
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #2c3ea4;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f0f3ff;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li button {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+li button:hover {
+  background-color: #cc0000;
+
+}
+.activity-item {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 12px 18px;
+background-color: #f7f9ff;
+margin-bottom: 10px;
+border-radius: 10px;
+transition: transform 0.2s ease;
+animation: fadeIn 0.4s ease;
+}
+
+.activity-item:hover {
+transform: scale(1.02);
+}
+
+.activity-item .left {
+display: flex;
+gap: 12px;
+align-items: center;
+}
+
+.activity-item .icon {
+font-size: 24px;
+}
+
+.delete-btn {
+background-color: #e53935;
+border: none;
+color: white;
+font-size: 16px;
+padding: 6px 12px;
+border-radius: 6px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+background-color: #b71c1c;
+}
+
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(10px); }
+to { opacity: 1; transform: translateY(0); }
+}
