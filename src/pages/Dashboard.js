@@ -3,6 +3,7 @@ import axios from "axios";
 import "./dashboard.css";
 import ActivityForm from "../components/ActivityForm";
 import ActivityList from "../components/ActivityList";
+const BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 const Dashboard = ({ onLogout }) => {
 const [activities, setActivities] = useState([]);
@@ -20,7 +21,7 @@ if (!token) {
 }
 
 axios
-  .get("http://localhost:5000/api/activities", {
+  .get(`${BASE_URL}/api/activities`, {
     headers: {
       Authorization: `Bearer ${token}`,
     },
