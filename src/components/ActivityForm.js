@@ -19,7 +19,7 @@ if (!token) {
 
 try {
   const res = await axios.post(
-    "http://localhost:5000/api/activities",
+    `${BASE_URL}/api/activities`,
     {
       activity,
       duration,
