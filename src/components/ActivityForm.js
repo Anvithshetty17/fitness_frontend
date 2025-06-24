@@ -6,7 +6,7 @@ const [activity, setActivity] = useState("");
 const [duration, setDuration] = useState("");
 const [date, setDate] = useState("");
 const [error, setError] = useState("");
-
+const BASE_URL = process.env.REACT_APP_API_BASE_URL;
 const handleSubmit = async (e) => {
 e.preventDefault();
 
