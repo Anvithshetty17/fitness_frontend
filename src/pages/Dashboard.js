@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "./dashboard.css";
+
 import ActivityForm from "../components/ActivityForm";
 import ActivityList from "../components/ActivityList";
 const BASE_URL = process.env.REACT_APP_API_BASE_URL;

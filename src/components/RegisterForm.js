@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./RegisterForm.css";
+
 
 const BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
@@ -25,6 +25,7 @@ function RegisterForm({ onRegister }) {
 
   return (
     <div className="container">
+        
       {error && <p style={{ color: "red" }}>{error}</p>}
       <form className="form" onSubmit={handleRegister}>
         <h2>Register</h2>
